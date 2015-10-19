@@ -1,0 +1,276 @@
+/* typography 
+--------------------------------------------------------*/
+body{
+	font-family: 'Josefin Sans', futura, arial, sans-serif;
+	font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+.fact,
+ul{
+	font-family: 'Timmana', sans-serif;
+}
+
+h2 a,
+h2 a:hover,
+.trans-women,
+.ten,
+.fact,
+.jen{
+	color:#ff0000;
+}
+h2{
+	margin:2% 0 0 0;
+}
+h2 a{
+	padding: 0em;
+	font-size: .75em;
+	letter-spacing: .1em;
+}
+h2 a:hover{
+	text-decoration: none;
+	border-top: 1px solid #ff0000;
+	padding-right: .1em;
+}
+
+ul li a{
+	color: #000;
+}
+.no{
+	font-size: 2.2em;
+	line-height: 0em;
+}
+h1{
+	font-size: 2.7em;
+	border-bottom: 2px solid #000;
+}
+h4{
+	text-align: center;
+	font-size: 1.3em;
+	padding-bottom: 5%;
+	border-bottom: 1px solid #000;
+}
+.ten,
+.fact{
+	font-size: 2em;
+}
+.ten{
+	line-height: 0;
+}
+.ten:hover{
+	font-size: 3em;
+}
+.trans-women:hover{
+	font-size: 2em;
+}
+.fact{
+	line-height: 0;
+}
+.facts p{
+	margin-bottom: 16%;
+}
+h5{
+	font-size: 1em;
+	text-align: right;
+}
+h5 a:hover{
+	color:blue;
+	text-decoration: none;
+
+}
+
+/* landing page layout 
+--------------------------------------------------------*/
+
+.site{
+	background-color: #000;
+}
+#landing-page{
+	height: 100vh;
+}
+.container{
+	width: 100%;
+}
+.name{
+	display:none;
+}
+
+#ten-graphic{
+	margin-top: 5vh;
+	margin-bottom: 7vh;
+	width: 100%;
+	stroke: #fff;
+	fill:#fff;
+	stroke-width:5;
+	stroke-miterlimit:10;
+}
+
+.black{
+	background-color: #000;
+}
+h4{
+	padding-top: 20%;
+	width: 85%;
+	margin: 0 auto;
+
+}
+#arrow{
+	width:20%;
+	max-width: 150px;
+	display: block;
+	margin-top: 15%;
+}
+.arrow-row{
+	display: flex;
+	justify-content:center;
+}
+
+
+/* facts layout
+--------------------------------------------------------*/
+
+
+.facts,
+h5{
+	width: 90%;
+	margin: 0 auto;
+}
+.first-facts{
+	margin-top: 40%;
+}
+/* nav
+--------------------------------------------------------*/
+.bottom-nav{
+	display: none;
+}	
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  display: block;
+  overflow: hidden; 
+}
+
+.navigation{
+	margin-top: 2%;
+}
+
+.nav-collapse ul {
+  list-style: none;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 60em; 
+}
+.nav-collapse li {
+	background-color: #fff;
+  border-bottom: 1px solid #000;
+}
+.nav-collapse li a{
+	letter-spacing:.1em;
+}
+.nav-collapse li:hover {
+  	background-color: #000; 
+}
+.nav-collapse li:hover a{
+	color:#fff;
+}
+.nav-collapse li.active {
+  background-color: white; 
+}
+
+.nav-collapse a {
+  display: block;
+  padding: 0.5em 6%;
+  color: #333;
+  text-decoration: none; 
+}
+
+.nav-collapse a:hover, .nav-collapse a:visited {
+  color: #333;
+  text-decoration: none; 
+}
+
+.nav-collapse a:active {
+  color: #1a1a1a;
+  text-decoration: none; 
+}
+@media (min-width: 36em) {
+  .nav-collapse a {
+      padding: 0.5em 1em; 
+  } 
+}
+.nav-collapse.opened {
+  max-height: 9999px; 
+}
+/**
+ * Disable `pointer-events` so that touch taps are processed immediately
+ * (otherwise a tap delay is used before the event fires).
+ */
+.disable-pointer-events {
+  pointer-events: none !important; 
+}
+/* nav toggle */
+.nav-toggle {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  -webkit-touch-callout: none; /* 1 */
+  float: left;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/hamburger.png");
+  background-size: 32px 32px; 
+} 
+.nav-toggle:hover{
+  border-top: 1px solid #fff; 
+}
+.nav-toggle:active {
+  background-color: #000; 
+}
+
+
+/* media queries
+--------------------------------------------------------*/
+@media screen and (min-width: 768px){
+
+	#ten-graphic{
+	margin-top: 4%;
+	margin-left: 7%;
+	margin-bottom: 0;
+	width: 60%;
+	stroke: #000;
+	fill:#000;
+	}
+	.name{
+		display: inline-block;
+		text-align: right;
+	}
+	h4{
+		border:none;
+	}
+	.site,
+	.black{
+	background-color: #fff;
+	}
+
+
+	/* navs */
+	.bottom-nav{
+	list-style: none;
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	}
+	.nav-collapse li,
+	.nav-toggle{
+		display:none;
+	}
+	 .js .nav-collapse {
+      max-height: none; 
+  } 
+
+}
