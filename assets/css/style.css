@@ -133,8 +133,9 @@ h4{
 
 /* facts layout
 --------------------------------------------------------*/
-
-
+.fact{
+		margin-left: 5%;
+	}
 .facts,
 h5{
 	width: 90%;
@@ -243,18 +244,21 @@ h5{
 	margin-bottom: 5vh;
 	width: 70%;
 	}
+	.facts{
+		margin-left: 5%;
+	}
 }
 @media screen and (min-width: 768px){
 
 	body{
 		background-image: url(../img/background.svg);
 		background-attachment: fixed;
-		background-size: cover;
+		background-size: 100vw 100vh;
 	}
 
 	#ten-graphic{
-	margin-top: 20%;
-	margin-left: 7%;
+	margin-top: 20vh;
+	margin-left: 7vh;
 	margin-bottom: 0;
 	width: 70%;
 	stroke: #000;
@@ -291,17 +295,34 @@ h5{
 		padding:0 3%;
 		margin-left: 10%;
 	}
+	.fact{
+		margin-left: 0;
+	}
 
 	.facts p{
 	margin-bottom: 8%;
-}
+	}
+	h5{
+		margin-bottom: 10%;
+	}
 
 	/* navs */
 	.bottom-nav{
+	width: 100%;
 	list-style: none;
 	display: flex;
 	position: fixed;
 	bottom: 0;
+	font-size: 1.2em;
+	letter-spacing: .1em;
+	justify-content:space-between;
+	margin-left: -2.5%;
+	}
+	.bottom-nav li a:hover{
+		text-decoration: none;
+		color:#ff0000;
+		border-top: 1px solid #ff0000;
+
 	}
 	.nav-collapse li,
 	.nav-toggle{
@@ -310,5 +331,39 @@ h5{
 	 .js .nav-collapse {
       max-height: none; 
   } 
+
+}
+
+@media screen and (min-width: 1030px){
+	.facts{
+		width: 50%;
+		margin-left: 0;
+		margin-top: 5%;
+		padding:0 5%;
+	}
+	h5{
+		margin-top: 7%;
+	}
+}
+@media screen and (min-width: 1269px){
+	#ten-graphic{
+		margin-top: 10vh;
+		margin-left: 12vh;
+		width: 60%;
+	}
+	.name{
+		width:20%;
+	}
+	h4{
+		font-size: 1.5em;
+	}
+	.bottom-nav{
+		margin-left: -1.5%;
+	}
+}
+@media screen and (min-width: 1509px){
+	h4{
+		font-size: 1.75em;
+	}
 
 }
