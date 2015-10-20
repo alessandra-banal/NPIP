@@ -276,12 +276,12 @@ h5{
 		margin-left: 40%;
 	}
 	.arrow-row{
-		display: block;
-		margin-left: 52%;
+		display: block;	
 		margin-top: 0;
 		background-color: rgba(255,255,255,0);
 	}
 	#arrow{
+	margin-left: 52%;
 	width:5%;
 	max-width: 150px;	
 }
