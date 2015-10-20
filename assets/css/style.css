@@ -45,7 +45,7 @@ ul li a{
 }
 h1{
 	font-size: 2.7em;
-	border-bottom: 2px solid #000;
+	
 }
 h4{
 	text-align: center;
@@ -89,7 +89,7 @@ h5 a:hover{
 	background-color: #000;
 }
 #landing-page{
-	height: 100vh;
+	min-height: 100vh;
 }
 .container{
 	width: 100%;
@@ -119,13 +119,15 @@ h4{
 }
 #arrow{
 	width:20%;
-	max-width: 150px;
-	display: block;
-	margin-top: 15%;
+	max-width: 150px;	
 }
 .arrow-row{
 	display: flex;
+	flex-wrap:wrap;
 	justify-content:center;
+	width: 100%;
+	background-color:#fff;
+	margin-top: 15%;
 }
 
 
@@ -139,7 +141,7 @@ h5{
 	margin: 0 auto;
 }
 .first-facts{
-	margin-top: 40%;
+	margin-top: 100px;
 }
 /* nav
 --------------------------------------------------------*/
@@ -166,17 +168,17 @@ h5{
   max-width: 60em; 
 }
 .nav-collapse li {
-	background-color: #fff;
-  border-bottom: 1px solid #000;
+	background-color: #000;
+  	border-bottom: 1px solid #fff;
 }
 .nav-collapse li a{
 	letter-spacing:.1em;
 }
 .nav-collapse li:hover {
-  	background-color: #000; 
+  	background-color: #fff; 
 }
 .nav-collapse li:hover a{
-	color:#fff;
+	color:#000;
 }
 .nav-collapse li.active {
   background-color: white; 
@@ -185,12 +187,12 @@ h5{
 .nav-collapse a {
   display: block;
   padding: 0.5em 6%;
-  color: #333;
+  color: #fff;
   text-decoration: none; 
 }
 
 .nav-collapse a:hover, .nav-collapse a:visited {
-  color: #333;
+  color: #fff;
   text-decoration: none; 
 }
 
@@ -235,13 +237,26 @@ h5{
 
 /* media queries
 --------------------------------------------------------*/
+@media screen and (min-width: 519px){
+	#ten-graphic{
+	margin-top: 3vh;
+	margin-bottom: 5vh;
+	width: 70%;
+	}
+}
 @media screen and (min-width: 768px){
 
+	body{
+		background-image: url(../img/background.svg);
+		background-attachment: fixed;
+		background-size: cover;
+	}
+
 	#ten-graphic{
-	margin-top: 4%;
+	margin-top: 20%;
 	margin-left: 7%;
 	margin-bottom: 0;
-	width: 60%;
+	width: 70%;
 	stroke: #000;
 	fill:#000;
 	}
@@ -250,13 +265,36 @@ h5{
 		text-align: right;
 	}
 	h4{
+		padding-top: 0;
+		padding-bottom: 2%;
+		width: 39%;
 		border:none;
+		margin-left: 40%;
 	}
+	.arrow-row{
+		display: block;
+		margin-left: 52%;
+		margin-top: 0;
+		background-color: rgba(255,255,255,0);
+	}
+	#arrow{
+	width:5%;
+	max-width: 150px;	
+}
 	.site,
 	.black{
-	background-color: #fff;
+	background-color: rgba(255,255,255,0);
 	}
 
+	.facts{
+		width: 80%;
+		padding:0 3%;
+		margin-left: 10%;
+	}
+
+	.facts p{
+	margin-bottom: 8%;
+}
 
 	/* navs */
 	.bottom-nav{
