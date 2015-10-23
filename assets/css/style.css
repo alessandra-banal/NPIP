@@ -51,8 +51,9 @@ h1 a{
 }
 h1 a:hover{
 	text-decoration: none;
-	color: #000;
+	color: #ff0000;
 }
+
 h6{
 	text-align: right;
 	font-size: 1.25em;
@@ -70,11 +71,12 @@ h4{
 .ten{
 	line-height: 0;
 }
-.ten:hover{
+h4:hover .ten{
 	font-size: 3em;
 }
-.trans-women:hover{
+h4:hover .trans-women{
 	font-size: 2em;
+	line-height: 1.5em;
 }
 .fact{
 	line-height: 0;
@@ -365,9 +367,9 @@ h5{
 	@-webkit-keyframes imageAnimationLong { 
 	    0% { opacity: 0;
 	    -webkit-animation-timing-function: ease-in; }
-	    .5% { opacity: 1;
+	    .01% { opacity: 1;
 	    -webkit-animation-timing-function: ease-out; }
-	    99.5% { opacity: 1 }
+	    99.9% { opacity: 1 }
 	    100% { opacity: 0 }
 	}
 	#ten-graphic{
@@ -383,10 +385,10 @@ h5{
 	    animation-delay: 3s; 
 	}	
 	.name{
-		-webkit-animation: imageAnimationLong 99s linear 0s;
-	    animation: imageAnimationLong 99s linear 0s; 
-	    -webkit-animation-delay: 9s;
-	    animation-delay: 9s; 
+		-webkit-animation: imageAnimationLong 9999s linear 0s;
+	    animation: imageAnimationLong 9999s linear 0s; 
+	    -webkit-animation-delay: 7s;
+	    animation-delay: 7s; 
 	}
 	@-webkit-keyframes move{
 	0% {
