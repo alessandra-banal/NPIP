@@ -1,3 +1,8 @@
+/*----------------------------------
+------------DEVELOPED AND DESIGNED BY
+---------------------Alessandra Banal
+-----------alessandra.banal@gmail.com
+-----------------------------------*/
 /* typography 
 --------------------------------------------------------*/
 body{
@@ -36,6 +41,10 @@ h2 a:hover{
 	border-top: 1px solid #ff0000;
 	padding-right: .1em;
 }
+h2 a:focus{
+	text-decoration: none;
+	color:#ff0000;
+}
 ul li a{
 	color: #000;
 }
@@ -53,7 +62,10 @@ h1 a:hover{
 	text-decoration: none;
 	color: #ff0000;
 }
-
+h1 a:focus{
+	text-decoration: none;
+	color:#000;
+}
 h6{
 	text-align: right;
 	font-size: 1.25em;
@@ -90,6 +102,10 @@ h5{
 }
 h5 a:hover{
 	color:blue;
+	text-decoration: none;
+}
+h5 a:focus{
+	color:#ff0000;
 	text-decoration: none;
 }
 /* landing page layout 
@@ -348,6 +364,10 @@ h5{
 		color: #000;
 		text-decoration: none;
 		border-top: 1px solid #000;
+	}
+	.bottom-nav li a:focus{
+		color: #000;
+		text-decoration: none;
 	}
 	.nav-collapse li,
 	.nav-toggle{
