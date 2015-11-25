@@ -6,7 +6,7 @@
 /* typography 
 --------------------------------------------------------*/
 body{
-	font-family: 'Josefin Sans', futura, arial, sans-serif;
+	font-family: 'Josefin Sans', futura, arial, sans-serif !important;
 	font-size: 18px;
 	color:#000;
 }
@@ -18,7 +18,7 @@ h5,
 h6,
 .fact,
 ul{
-	font-family: 'Timmana', sans-serif;
+	font-family: 'Timmana', sans-serif !important;
 }
 h2 a,
 h2 a:hover,
@@ -60,7 +60,7 @@ h1 a{
 }
 h1 a:hover{
 	text-decoration: none;
-	color: #ff0000;
+	color: #737373;
 }
 h1 a:focus{
 	text-decoration: none;

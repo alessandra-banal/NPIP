@@ -15,5 +15,10 @@ $(document).ready(function() {
                 $(this).animate({'opacity':'1'},1000);                  
             }           
         });   
-    });   
+    });
+
+     var navigation = responsiveNav('.nav-collapse', {
+            transition: 400,
+            insert: 'after'
+        });   
 });
